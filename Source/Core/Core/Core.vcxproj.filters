@@ -163,6 +163,9 @@
     <Filter Include="HW %28Flipper/Hollywood%29\WiimoteCommon">
       <UniqueIdentifier>{ee6645da-3ad9-4fe7-809f-e4646d0b0ca5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Riivolution">
+      <UniqueIdentifier>{fa599692-cad9-47f1-9060-e68321cf73e9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BootManager.cpp" />
@@ -889,6 +892,9 @@
     <ClCompile Include="IOS\Network\NCD\WiiNetConfig.cpp">
       <Filter>IOS\Network\NCD</Filter>
     </ClCompile>
+    <ClCompile Include="RiivolutionConfig.cpp">
+      <Filter>Riivolution</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BootManager.h" />
@@ -1558,6 +1564,9 @@
     </ClInclude>
     <ClInclude Include="HW\WiimoteCommon\WiimoteReport.h">
       <Filter>HW %28Flipper/Hollywood%29\WiimoteCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="RiivolutionConfig.h">
+      <Filter>Riivolution</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
