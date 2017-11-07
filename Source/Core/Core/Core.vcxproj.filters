@@ -165,6 +165,11 @@
     </Filter>
     <Filter Include="Riivolution">
       <UniqueIdentifier>{fa599692-cad9-47f1-9060-e68321cf73e9}</UniqueIdentifier>
+      <Extensions>
+      </Extensions>
+    </Filter>
+    <Filter Include="Riivolution\Config">
+      <UniqueIdentifier>{6149d71e-b4f2-43e7-8dbf-2951a1b5cf7f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -892,7 +897,16 @@
     <ClCompile Include="IOS\Network\NCD\WiiNetConfig.cpp">
       <Filter>IOS\Network\NCD</Filter>
     </ClCompile>
-    <ClCompile Include="RiivolutionConfig.cpp">
+    <ClCompile Include="Riivolution\RiivolutionXml.cpp">
+      <Filter>Riivolution</Filter>
+    </ClCompile>
+    <ClCompile Include="Riivolution\Config\RiivolutionConfig.cpp">
+      <Filter>Riivolution\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Riivolution\RiivolutionPatches.cpp">
+      <Filter>Riivolution</Filter>
+    </ClCompile>
+    <ClCompile Include="Riivolution\RiivolutionOptions.cpp">
       <Filter>Riivolution</Filter>
     </ClCompile>
   </ItemGroup>
@@ -1565,7 +1579,16 @@
     <ClInclude Include="HW\WiimoteCommon\WiimoteReport.h">
       <Filter>HW %28Flipper/Hollywood%29\WiimoteCommon</Filter>
     </ClInclude>
-    <ClInclude Include="RiivolutionConfig.h">
+    <ClInclude Include="Riivolution\RiivolutionXml.h">
+      <Filter>Riivolution</Filter>
+    </ClInclude>
+    <ClInclude Include="Riivolution\Config\RiivoultionConfig.h">
+      <Filter>Riivolution\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Riivolution\RiivolutionPatches.h">
+      <Filter>Riivolution</Filter>
+    </ClInclude>
+    <ClInclude Include="Riivolution\RiivolutionOptions.h">
       <Filter>Riivolution</Filter>
     </ClInclude>
   </ItemGroup>

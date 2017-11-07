@@ -2,6 +2,7 @@
 
 #include <vector>
 #include <map>
+#include <pugixml.hpp>
 
 namespace rii
 {
@@ -72,8 +73,9 @@ namespace rii
     }
   } Section;
 
-  class RiivolutionConfig
+  class RiivolutionXml
   {
+    friend class RiivolutionPatches;
   private:
     const wchar_t *GetWC(const char *c)
     {
@@ -83,6 +85,8 @@ namespace rii
 
       return wc;
     }
+
+    pugi::xml_document* document;
 
     const char* wiidisc_version;
     const char* root_path;
@@ -94,16 +98,15 @@ namespace rii
     const char* game_version;
     const char* disc_number;
 
+    const char* filename;
+
     std::vector<char> regions;
     std::map<std::string, GamePatch> patches;
     std::vector<Section> sections;
 
   public:
-    RiivolutionConfig(const char* filename) {
-      RiivolutionConfig(GetWC(filename));
-    }
-    RiivolutionConfig(const wchar_t* filename);
-    ~RiivolutionConfig();
+    RiivolutionXml(const char* filename);
+    ~RiivolutionXml();
   };
 
 }

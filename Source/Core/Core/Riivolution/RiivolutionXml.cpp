@@ -1,4 +1,4 @@
-#include "Core/RiivolutionConfig.h"
+#include "Core/Riivolution/RiivolutionXml.h"
 #include <iostream>
 #include <pugixml.hpp>
 #include <unordered_map>
@@ -214,16 +214,19 @@ namespace rii {
     }
   }
 
-  RiivolutionConfig::RiivolutionConfig(const wchar_t* filename)
+  RiivolutionXml::RiivolutionXml(const char* filen)
   {
-    pugi::xml_document doc;
+    this->filename = filen;
 
-    pugi::xml_parse_result result = doc.load_file(filename);
+    pugi::xml_document* doc = new pugi::xml_document();
+    document = doc;
 
-    auto node_wiidisc = doc.select_node("/wiidisc[@version]").node();
-    auto node_id = doc.select_node("/wiidisc[@version]/id").node();
-    auto xpatches = doc.select_nodes("/wiidisc[@version]/patch[@id]");
-    auto node_options = doc.select_node("/wiidisc[@version]/options").node();
+    pugi::xml_parse_result result = doc->load_file(filen);
+
+    auto node_wiidisc = doc->select_node("/wiidisc[@version]").node();
+    auto node_id = doc->select_node("/wiidisc[@version]/id").node();
+    auto xpatches = doc->select_nodes("/wiidisc[@version]/patch[@id]");
+    auto node_options = doc->select_node("/wiidisc[@version]/options").node();
 
     /* START wiidisc ATTRIBUTES */
     wiidisc_version = node_wiidisc.attribute("version").as_string();
@@ -269,7 +272,7 @@ namespace rii {
 
   }
 
-  RiivolutionConfig::~RiivolutionConfig()
+  RiivolutionXml::~RiivolutionXml()
   {
   }
 

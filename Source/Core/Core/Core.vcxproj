@@ -290,7 +290,10 @@
     <ClCompile Include="PowerPC\PPCSymbolDB.cpp" />
     <ClCompile Include="PowerPC\PPCTables.cpp" />
     <ClCompile Include="PowerPC\Profiler.cpp" />
-    <ClCompile Include="RiivolutionConfig.cpp" />
+    <ClCompile Include="Riivolution\Config\RiivolutionConfig.cpp" />
+    <ClCompile Include="Riivolution\RiivolutionOptions.cpp" />
+    <ClCompile Include="Riivolution\RiivolutionPatches.cpp" />
+    <ClCompile Include="Riivolution\RiivolutionXml.cpp" />
     <ClCompile Include="State.cpp" />
     <ClCompile Include="TitleDatabase.cpp" />
     <ClCompile Include="WiiRoot.cpp" />
@@ -528,7 +531,10 @@
     <ClInclude Include="PowerPC\PPCSymbolDB.h" />
     <ClInclude Include="PowerPC\PPCTables.h" />
     <ClInclude Include="PowerPC\Profiler.h" />
-    <ClInclude Include="RiivolutionConfig.h" />
+    <ClInclude Include="Riivolution\Config\RiivoultionConfig.h" />
+    <ClInclude Include="Riivolution\RiivolutionOptions.h" />
+    <ClInclude Include="Riivolution\RiivolutionPatches.h" />
+    <ClInclude Include="Riivolution\RiivolutionXml.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="Titles.h" />
     <ClInclude Include="TitleDatabase.h" />

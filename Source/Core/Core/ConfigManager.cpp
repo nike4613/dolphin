@@ -392,6 +392,7 @@ void SConfig::LoadSettings()
   LoadAnalyticsSettings(ini);
   LoadBluetoothPassthroughSettings(ini);
   LoadUSBPassthroughSettings(ini);
+
 }
 
 void SConfig::LoadGeneralSettings(IniFile& ini)
